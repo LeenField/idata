@@ -1,3 +1,21 @@
 .white-background{
     background-color: white;
 }
+.lab-card{
+    height: 130px;
+    /*text-overflow: ellipsis;*/
+}
+.lab-thumb{
+    margin-left: -15px;
+    margin-top: -10px;
+    height: 80px;
+    width: 80px;
+}
+.lab-intro{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    /*float: right;*/
+}
