@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="x-admin-sm">
+<!--<html class="x-admin-sm">-->
 <head>
     <meta charset="UTF-8">
     <title>厦门大学科研数据共享平台</title>
@@ -33,7 +33,7 @@
         <div class="layui-col-md2 layui-card-header">
             <a>实验室标签</a>
         </div>
-        <div class="layui-col-md10 layui-card-body">
+        <div class="layui-col-md10 layui-card-body lab-card">
                 <span class="layui-breadcrumb" lay-separator="|">
                     <a href="">标签1</a>
                     <a href="">标签2</a>
@@ -91,29 +91,16 @@
 
             <div class="layui-col-md3">
                 <div class=" layui-card" style="margin: 3px 3px">
-                    <div class="layui-card-header layui-bg-green">实验室标题
+                    <div class="layui-card-header layui-bg-green">健康医疗大数据研究所
+<!--                        星级评价展示-->
                         <div class="layui-inline star_rate" style="float: right; margin-top: -8px"></div>
                     </div>
-                    <div class="layui-card-body">实验室简介
+                    <div class="layui-card-body lab-card">
+                        <img src="../static/images/logo.png" class="lab-thumb">
+                        <div class="layui-text lab-intro" >
+                            以精准临床医学为核心，以大数据技术为依托，以“健康中国”国家重大战略需求为导向，通过对临床和基础大数据的分析和挖掘，构建基于大数据的医学知识本体，并在此基础上针对疾病的发生，诊断和治疗展开多维度知识发现和人工智能研究
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="layui-col-md3">
-                <div class=" layui-card" style="margin: 3px 3px">
-                    <div class="layui-card-header layui-bg-green">实验室标题
-                        <div class="layui-inline star_rate" style="float: right; margin-top: -8px"></div>
-                    </div>
-                    <div class="layui-card-body">实验室简介</div>
-                </div>
-            </div>
-
-            <div class="layui-col-md3">
-                <div class=" layui-card" style="margin: 3px 3px">
-                    <div class="layui-card-header layui-bg-green">实验室标题
-                        <div class="layui-inline star_rate" style="float: right; margin-top: -8px"></div>
-                    </div>
-                    <div class="layui-card-body">实验室简介</div>
                 </div>
             </div>
 
@@ -122,7 +109,25 @@
                     <div class="layui-card-header layui-bg-green">健康医疗大数据研究所
                         <div class="layui-inline star_rate" style="float: right; margin-top: -8px"></div>
                     </div>
-                    <div class="layui-card-body">实验室简介</div>
+                    <div class="layui-card-body lab-card">实验室简介</div>
+                </div>
+            </div>
+
+            <div class="layui-col-md3">
+                <div class=" layui-card" style="margin: 3px 3px">
+                    <div class="layui-card-header layui-bg-green">健康医疗大数据研究所
+                        <div class="layui-inline star_rate" style="float: right; margin-top: -8px"></div>
+                    </div>
+                    <div class="layui-card-body lab-card">实验室简介</div>
+                </div>
+            </div>
+
+            <div class="layui-col-md3">
+                <div class=" layui-card" style="margin: 3px 3px">
+                    <div class="layui-card-header layui-bg-green">健康医疗大数据研究所
+                        <div class="layui-inline star_rate" style="float: right; margin-top: -8px"></div>
+                    </div>
+                    <div class="layui-card-body lab-card">实验室简介</div>
                 </div>
             </div>
 
@@ -136,6 +141,7 @@
             </div>
 
         </div>
+    </div>
         <!--            换页按钮 以及页码列表 跳转-->
         <div class="layui-col-md5 layui-col-lg-offset6 layui-btn-group" style="margin-top: 3px">
             <button class="layui-btn layui-btn-primary"><a class="layui-icon" href="">&#xe603</a></button>
