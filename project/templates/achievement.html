@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../static/css/font.css">
 <!--    <link rel="stylesheet" href="../static/css/layui.css" media="all">-->
     <link rel="stylesheet" href="../static/lib/layui/css/layui.css">
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../static/js/xadmin.js"></script>
 </head>
 <body>
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
@@ -48,20 +51,21 @@
     <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
         <legend>请为数据打分</legend>
     </fieldset>
-    <div id="star"></div>
-
+    <div style="margin: -5px 5%">
+    <div class="star_rate" style=""></div>
     <div>
         <a class="layui-btn" href="" target="_blank" >继续上传</a>
         <button class="layui-btn ">确定</button>
     </div>
+    </div>
 
-    <script src="../static/js/lib/layui/layui.js" charset="utf-8"></script>
+<!--    <script src="../static/js/lib/layui/layui.js" charset="utf-8"></script>-->
     <script>
         layui.use(['rate'], function () {
             var rate = layui.rate;
-        }
-        rate.render({
-            elem: '#star'
+            rate.render({
+                elem: '#star'
+            })
         })
     </script>
 
@@ -97,8 +101,8 @@
             var rate = layui.rate;
             var insl = rate.render({
                 elem: ".star_rate",
-                value: 5,
-                readonly: true
+                value: 5
+                // readonly: true
             })
         })
     </script>
